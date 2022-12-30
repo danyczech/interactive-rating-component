@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216deg, 12%, 8%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.card__container {
+  background-color: hsl(213deg, 19%, 18%);
+  width: 350px;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.rating__icon {
+  background-color: hsl(213deg, 20%, 22%);
+  width: fit-content;
+  padding: 0.8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rating__description {
+  color: hsl(217deg, 12%, 63%);
+  line-height: 1.5;
+  font-size: 15px;
+  margin-bottom: 1rem;
+}
+.rating__all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.rating__all span {
+  background-color: hsl(213deg, 20%, 22%);
+  color: hsl(217deg, 12%, 63%);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rating__all span:hover {
+  background-color: hsl(216deg, 12%, 54%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+.rating__btn {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+.rating__btn:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+
+.thank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.thank__selection {
+  background-color: hsl(213deg, 20%, 22%);
+  color: hsl(25deg, 97%, 53%);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
+}
+.thank__title {
+  margin: 0;
+}
+.thank__description {
+  color: hsl(217deg, 12%, 63%);
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.checked {
+  background-color: hsl(25deg, 97%, 53%) !important;
+  color: hsl(0deg, 0%, 100%) !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+  opacity: 0.7;
+}
+
+.attribution a {
+  color: hsl(25deg, 97%, 53%);
+}
+
+/*# sourceMappingURL=index.css.map */

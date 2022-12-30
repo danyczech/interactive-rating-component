@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+$main-color: hsl(25, 97%, 53%);
+
+$neutral-very-dark: hsl(216, 12%, 8%);
+$neutral-dark: hsl(213, 19%, 18%);
+$neutral-dark-secondary: hsl(213, 20%, 22%);
+$neutral-medium: hsl(216, 12%, 54%);
+$neutral-light: hsl(217, 12%, 63%);
+$neutral-white: hsl(0, 0%, 100%);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: $neutral-very-dark;
+  color: $neutral-white;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.card__container {
+  background-color: $neutral-dark;
+  width: 350px;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.rating {
+  &__icon {
+    background-color: $neutral-dark-secondary;
+    width: fit-content;
+    padding: 0.8rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__description {
+    color: $neutral-light;
+    line-height: 1.5;
+    font-size: 15px;
+    margin-bottom: 1rem;
+  }
+
+  &__all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    span {
+      background-color: $neutral-dark-secondary;
+      color: $neutral-light;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background-color: $neutral-medium;
+        color: $neutral-white;
+      }
+    }
+  }
+}
+
+.rating__btn {
+  background-color: $main-color;
+  color: $neutral-white;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $neutral-white;
+    color: $main-color;
+  }
+}
+
+.thank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  &__selection {
+    background-color: $neutral-dark-secondary;
+    color: $main-color;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__description {
+    color: $neutral-light;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+
+//is added via JS, shows the chosen rating
+.checked {
+  background-color: $main-color !important;
+  color: $neutral-white !important;
+}
+
+//hides the cards, switches via JS, must stay at the end of this file, overwrites previous code
+.hidden {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+  opacity: 0.7;
+}
+.attribution a {
+  color: $main-color;
+}
