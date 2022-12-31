@@ -18,8 +18,8 @@ body {
 
 .card__container {
   background-color: hsl(213deg, 19%, 18%);
-  width: 350px;
-  border-radius: 1rem;
+  width: 360px;
+  border-radius: 1.5rem;
   padding: 2rem;
 }
 
@@ -39,14 +39,14 @@ body {
   color: hsl(217deg, 12%, 63%);
   line-height: 1.5;
   font-size: 15px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .rating__all {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .rating__all span {
   background-color: hsl(213deg, 20%, 22%);
@@ -74,8 +74,7 @@ body {
   color: hsl(0deg, 0%, 100%);
   width: 100%;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 700;
+  letter-spacing: 2px;
   border: none;
   border-radius: 2rem;
   padding: 1rem 0;

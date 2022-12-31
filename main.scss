@@ -30,8 +30,8 @@ body {
 //basic styling for both cards
 .card__container {
   background-color: $neutral-dark;
-  width: 350px;
-  border-radius: 1rem;
+  width: 360px;
+  border-radius: 1.5rem;
   padding: 2rem;
 }
 
@@ -55,7 +55,7 @@ body {
     color: $neutral-light;
     line-height: 1.5;
     font-size: 15px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -64,7 +64,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 
   span {
     background-color: $neutral-dark-secondary;
@@ -96,8 +96,7 @@ body {
   color: $neutral-white;
   width: 100%;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 700;
+  letter-spacing: 2px;
   border: none;
   border-radius: 2rem;
   padding: 1rem 0;
