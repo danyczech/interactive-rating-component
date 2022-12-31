@@ -19,6 +19,7 @@ body {
   color: $neutral-white;
 }
 
+//styling only for Frontendmentor challenge to put it to the middle of the page
 .card {
   display: flex;
   align-items: center;
@@ -26,6 +27,7 @@ body {
   height: 90vh;
 }
 
+//basic styling for both cards
 .card__container {
   background-color: $neutral-dark;
   width: 350px;
@@ -33,6 +35,7 @@ body {
   padding: 2rem;
 }
 
+//styling of text part of rating card - icon, title and description
 .rating {
   &__icon {
     background-color: $neutral-dark-secondary;
@@ -44,38 +47,50 @@ body {
     justify-content: center;
   }
 
+  &__title {
+    font-size: 1.5rem;
+  }
+
   &__description {
     color: $neutral-light;
     line-height: 1.5;
     font-size: 15px;
     margin-bottom: 1rem;
   }
+}
 
-  &__all {
+//rating section of the card - numbers 1-5 & hovering
+.rating__all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  span {
+    background-color: $neutral-dark-secondary;
+    color: $neutral-light;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    cursor: pointer;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    justify-content: center;
 
-    span {
-      background-color: $neutral-dark-secondary;
-      color: $neutral-light;
-      width: 2.5rem;
-      height: 2.5rem;
-      border-radius: 50%;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      &:hover {
-        background-color: $neutral-medium;
-        color: $neutral-white;
-      }
+    &:hover {
+      background-color: $neutral-medium;
+      color: $neutral-white;
     }
   }
 }
 
+//rating section, is added via JS, highlights the choosen rating 1-5
+.checked {
+  background-color: $main-color !important;
+  color: $neutral-white !important;
+}
+
+//rating section, submit button styling from scratch
 .rating__btn {
   background-color: $main-color;
   color: $neutral-white;
@@ -94,6 +109,7 @@ body {
   }
 }
 
+//thank you card, flexbox to center all parts in container
 .thank {
   display: flex;
   flex-direction: column;
@@ -121,17 +137,12 @@ body {
   }
 }
 
-//is added via JS, shows the chosen rating
-.checked {
-  background-color: $main-color !important;
-  color: $neutral-white !important;
-}
-
 //hides the cards, switches via JS, must stay at the end of this file, overwrites previous code
 .hidden {
   display: none;
 }
 
+//footer part of page
 .attribution {
   font-size: 11px;
   text-align: center;
